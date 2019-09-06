@@ -6,6 +6,7 @@ import { IReel } from "interfaces";
 import Balance from "components/balance";
 import Debug from "components/debug";
 import { ReelSlots, DebugMode } from "enums";
+import Helper from "components/helper";
 
 const reelSlots = [ReelSlots.bar3, ReelSlots.bar1, ReelSlots.bar2, ReelSlots.seven, ReelSlots.cherry];
 
@@ -229,6 +230,7 @@ export default class Game extends React.Component<IProps, IState> {
             <SpinButton onClick={this.spin} />
             {status == PayTableStatus.Won ? <Bolt marginTop={80 * rowWon} /> : null}
           </Slot>
+          <Helper />
           <PayTable status={status} won={won} blink={blink} />
           <Debug
             enabled={!this.isInPlay()}
