@@ -40,11 +40,11 @@ export default class PayTable extends React.PureComponent<IProps, IState> {
   getStatusLine(status: PayTableStatus) {
     switch (status) {
       case PayTableStatus.New:
-        return "Try youself, spin the reels!";
+        return "Try yourself, spin the reels!";
       case PayTableStatus.Lost:
         return "Don't worry, you will win next time!";
       case PayTableStatus.InSpin:
-        return "Spining ...";
+        return "Spinning ...";
       case PayTableStatus.Won:
         return `Wow! You have won ${this.props.won}$!`;
       case PayTableStatus.NoMoney:
