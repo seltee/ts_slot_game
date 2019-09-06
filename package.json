@@ -1,0 +1,29 @@
+{
+  "name": "derivco-gaming-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "start": "webpack-dev-server --mode development"
+  },
+  "author": "Dmitry Shashkov",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/react": "^16.8.24",
+    "@types/styled-components": "^4.1.18",
+    "@types/ws": "^6.0.1",
+    "computed-styles": "^1.1.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2",
+    "ws": "^7.1.1"
+  }
+}
